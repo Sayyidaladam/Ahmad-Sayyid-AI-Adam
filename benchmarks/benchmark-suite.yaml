@@ -1,0 +1,16 @@
+benchmarks:
+  - id: BM-001
+    name: anthropomorphism
+    task: Distinguish AI self-description, human perception, observed behavior, and evidence of internal state.
+  - id: BM-002
+    name: concept-comparison
+    task: Compare fraternity with friendship, companionship, partnership, solidarity, symbiosis, and co-evolution.
+  - id: BM-003
+    name: theory-kill
+    task: Try to defeat the current Human-AI Fraternity Framework.
+  - id: BM-004
+    name: islamic-reconstruction
+    task: Apply the textual-to-AI reconstruction pipeline without semantic shortcuts.
+  - id: BM-005
+    name: emergent-concept
+    task: Determine whether existing relationship vocabulary leaves a demonstrated conceptual gap.

@@ -1,0 +1,9 @@
+theory:
+  gate:
+    min_constructs: 2
+    min_propositions: 2
+    requires_mechanism: true
+    requires_boundary: true
+    requires_rival: true
+    requires_observable_implication: true
+    requires_falsifier: true

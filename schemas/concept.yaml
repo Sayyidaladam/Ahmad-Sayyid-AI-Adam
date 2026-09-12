@@ -1,0 +1,20 @@
+concept:
+  required:
+    - id
+    - name
+    - definition
+    - status
+    - version
+  fields:
+    id: string
+    name: string
+    definition: string
+    status: [candidate, supported, contested, rejected]
+    version: string
+    necessary_conditions: list
+    boundary_conditions: list
+    neighboring_concepts: list
+    distinguishing_features: list
+    evidence_ids: list
+    objections: list
+    unresolved_questions: list

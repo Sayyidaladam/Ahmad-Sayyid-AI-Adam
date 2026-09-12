@@ -1,0 +1,17 @@
+states:
+  - QUESTION
+  - CONCEPTS
+  - SOURCES
+  - PASSAGES
+  - CLAIMS
+  - EVIDENCE
+  - CONTROVERSIES
+  - MECHANISMS
+  - PROPOSITIONS
+  - PREDICTIONS
+  - ADVERSARIAL_TEST
+  - DECISION
+  - VERSIONED_OUTPUT
+rules:
+  no_skip_without_record: true
+  preserve_negative_evidence: true

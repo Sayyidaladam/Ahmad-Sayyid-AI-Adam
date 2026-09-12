@@ -1,0 +1,16 @@
+decision:
+  allowed:
+    - KEEP
+    - REFRAME
+    - NARROW
+    - SPECIAL_CASE
+    - SYNONYM
+    - NORMATIVE_CATEGORY
+    - EMPIRICALLY_UNSUPPORTED
+    - ONTOLOGICALLY_UNSUPPORTED
+    - ABANDON
+  required:
+    - decision
+    - rationale
+    - evidence_ids
+    - uncertainties

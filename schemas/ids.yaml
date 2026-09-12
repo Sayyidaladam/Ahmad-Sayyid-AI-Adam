@@ -1,0 +1,17 @@
+ids:
+  source: SRC
+  passage: PASS
+  claim: CLM
+  evidence: EVD
+  interpretation: INT
+  inference: INF
+  concept: CPT
+  mechanism: MECH
+  proposition: PROP
+  prediction: PRED
+  theory: THY
+  decision: DEC
+  test: ST
+  uncertainty: UNC
+  benchmark: BM
+  version_change: VER
