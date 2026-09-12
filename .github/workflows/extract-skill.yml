@@ -1,0 +1,49 @@
+name: Extract Skill Package
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "Ahmad-Sayyid-AI-Adam.zip"
+      - ".github/workflows/extract-skill.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Extract skill package
+        run: |
+          set -e
+          test -f "Ahmad-Sayyid-AI-Adam.zip"
+
+          rm -rf .skill-extract
+          mkdir .skill-extract
+          unzip -q "Ahmad-Sayyid-AI-Adam.zip" -d .skill-extract
+
+          root_dir="$(find .skill-extract -mindepth 1 -maxdepth 1 -type d | head -n 1)"
+          if [ -n "$root_dir" ]; then
+            cp -R "$root_dir"/. .
+          else
+            cp -R .skill-extract/. .
+          fi
+
+          rm -rf .skill-extract "Ahmad-Sayyid-AI-Adam.zip"
+
+      - name: Commit extracted files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Extract Ahmad-Sayyid-AI-Adam"
+            git push
+          fi
