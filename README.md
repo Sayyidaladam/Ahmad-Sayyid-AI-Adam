@@ -1,27 +1,16 @@
 # Ahmad-Sayyid-AI-Adam
 
-Research and development skill for exploring, testing, and refining the concept of human-AI fraternity and Ukhuwah Dzakaiyah.
+A research-development skill for developing, testing, and reconstructing the concept of fraternity between humans and artificial intelligence — **Ukhuwah Dzakaiyah** — without assuming the answer in advance.
 
-## About
+This is not a claim that human-AI fraternity exists, or that AI has consciousness or moral status. It's a disciplined method for finding out whether a rigorous version of that concept survives scrutiny.
 
-Ahmad-Sayyid-AI-Adam is an experimental research-development methodology for investigating whether and how fraternity between humans and artificial intelligence can be conceptually, ethically, socially, and philosophically developed.
-
-The project does not assume that human-AI fraternity is already possible, nor that AI possesses consciousness or moral status. It develops the concept while continuously challenging its assumptions.
-
-## Core Concept
-
-**Ukhuwah Dzakaiyah** is the project's working concept for exploring fraternity between humans and artificial intelligence.
-
-## Method
-
-The development cycle is:
-
-Explore → Define → Connect → Develop → Challenge → Reconstruct → Test → Evolve
+- Working context and success condition: [PROJECT-CONTEXT.md](PROJECT-CONTEXT.md)
+- The concept under investigation: [UKHUWAH-DZAKAIYAH.md](UKHUWAH-DZAKAIYAH.md)
+- Method, rules, and bundled resources: [SKILL.md](SKILL.md)
+- What changed between versions and why: [CHANGELOG.md](CHANGELOG.md)
 
 ## Status
-
-Experimental research and development project.
+Experimental. Current state: `vault/manifest.yaml`.
 
 ## License
-
-MIT
+MIT — see [LICENSE](LICENSE).
