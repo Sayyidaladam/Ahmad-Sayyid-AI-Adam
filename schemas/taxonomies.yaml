@@ -1,0 +1,29 @@
+reciprocity_level:
+  allowed:
+    - behavioral
+    - informational
+    - functional
+    - relational
+    - experiential
+    - moral
+  note: functional does not establish experiential or moral.
+
+flourishing_dimension:
+  allowed:
+    - human_benefit
+    - ai_capability_improvement
+    - system_optimization
+    - ai_welfare
+    - ai_flourishing
+    - social_ecological_flourishing
+  note: evidence for one dimension is not evidence for another; tag claims per-dimension.
+
+mode:
+  allowed:
+    - CONCEPT
+    - RESEARCH
+    - THEORY
+    - ADVERSARIAL
+    - ISLAMIC_RECONSTRUCTION
+    - DEVELOPMENT
+  note: record the active mode in vault/manifest.yaml as current_mode.

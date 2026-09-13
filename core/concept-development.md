@@ -13,6 +13,8 @@ For each concept record:
 - normative implications,
 - objections,
 - unresolved questions,
+- reciprocity level (see schemas/taxonomies.yaml),
+- neighboring ukhuwah typology, if the concept touches ukhuwah (see core/islamic-reconstruction.md),
 - version.
 
 Do not alter a definition merely to save a theory.

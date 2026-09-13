@@ -3,6 +3,8 @@ ID:
 Name:
 Version:
 Status:
+Reciprocity level:
+Neighboring ukhuwah typology:
 
 Definition:
 

@@ -1,0 +1,19 @@
+evidence:
+  required:
+    - id
+    - claim_id
+    - source_id
+    - passage
+    - confidence
+  fields:
+    id: string
+    claim_id: string
+    source_id: string
+    passage: string
+    interpretation: string
+    confidence:
+      evidence_confidence: [low, medium, high]
+      interpretation_confidence: [low, medium, high]
+      inference_confidence: [low, medium, high]
+    rival_explanation_considered: boolean
+  note: report the three confidence levels separately, per core/epistemic-validator.md — do not collapse them into one score.

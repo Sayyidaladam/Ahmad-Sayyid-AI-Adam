@@ -1,0 +1,23 @@
+claim:
+  required:
+    - id
+    - text
+    - status
+    - source_ids
+  fields:
+    id: string
+    text: string
+    status: [candidate, supported, contested, rejected]
+    source_ids: list
+    evidence_ids: list
+    relations: list
+    flourishing_dimension: list  # each item constrained to taxonomies.yaml#flourishing_dimension.allowed
+    version: string
+  relation_types:
+    - SUPPORTS
+    - CONTRADICTS
+    - QUALIFIES
+    - DEPENDS_ON
+    - REFINES
+    - REFRAMES
+    - CHALLENGES

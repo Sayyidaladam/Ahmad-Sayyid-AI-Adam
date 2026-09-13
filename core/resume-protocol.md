@@ -1,7 +1,7 @@
 # Resume Protocol
 
 When continuing:
-1. Load latest state.
+1. Load latest state (see vault/README.md for load order).
 2. Identify current question.
 3. Review latest decisions.
 4. Review rejected hypotheses.

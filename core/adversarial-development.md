@@ -14,4 +14,6 @@ Attack the current concept using:
 11. measurement failure.
 
 Possible outcomes:
-KEEP / REFRAME / NARROW / SPECIAL_CASE / SYNONYM / NORMATIVE_CATEGORY / UNSUPPORTED / ABANDON
+KEEP / REFRAME / NARROW / SPECIAL_CASE / SYNONYM / NORMATIVE_CATEGORY / EMPIRICALLY_UNSUPPORTED / ONTOLOGICALLY_UNSUPPORTED / ABANDON
+
+Use EMPIRICALLY_UNSUPPORTED when evidence failure or measurement failure is the cause; use ONTOLOGICALLY_UNSUPPORTED when ontology failure or non-falsifiability is the cause. They fail for different reasons and call for different next steps.

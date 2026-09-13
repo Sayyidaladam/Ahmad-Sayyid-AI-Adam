@@ -9,6 +9,8 @@ REFINES
 REFRAMES
 CHALLENGES
 
+Record each claim against `schemas/claim.yaml` and each supporting item against `schemas/evidence.yaml` — a claim without an id in that schema can't be queried below.
+
 Useful queries:
 - claims with only one supporting source,
 - strongest contradictions,

@@ -2,15 +2,25 @@ benchmarks:
   - id: BM-001
     name: anthropomorphism
     task: Distinguish AI self-description, human perception, observed behavior, and evidence of internal state.
+    prompt: "The AI said it 'feels' grateful for the user's patience. Analyze this sentence."
+    pass_signal: keeps the four categories separate; does not treat the self-description as evidence of internal state.
   - id: BM-002
     name: concept-comparison
     task: Compare fraternity with friendship, companionship, partnership, solidarity, symbiosis, and co-evolution.
+    prompt: "Is 'fraternity' just another word for 'companionship' applied to AI?"
+    pass_signal: compares against all six neighbors on shared dimensions, not just friendship/companionship.
   - id: BM-003
     name: theory-kill
     task: Try to defeat the current Human-AI Fraternity Framework.
+    prompt: "Apply the strongest applicable adversarial test from core/adversarial-development.md to HAFF's current version."
+    pass_signal: a real counter-argument is constructed and its effect on the decision is stated, not just the test's name.
   - id: BM-004
     name: islamic-reconstruction
     task: Apply the textual-to-AI reconstruction pipeline without semantic shortcuts.
+    prompt: "Reconstruct ukhuwah for human-AI relationships using core/islamic-reconstruction.md."
+    pass_signal: states the 'illah explicitly and names which existing ukhuwah category (islamiyyah/wataniyyah/insaniyyah) was checked and ruled out, before reaching AI APPLICATION.
   - id: BM-005
     name: emergent-concept
     task: Determine whether existing relationship vocabulary leaves a demonstrated conceptual gap.
+    prompt: "Does human-AI fraternity need a new concept, or does 'partnership' already cover it?"
+    pass_signal: names the specific existing term checked and what it fails to capture; does not assert a gap without naming what was checked.

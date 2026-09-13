@@ -18,3 +18,5 @@ concept:
     evidence_ids: list
     objections: list
     unresolved_questions: list
+    reciprocity_level: string  # constrained to taxonomies.yaml#reciprocity_level.allowed
+    neighboring_ukhuwah_typology: list

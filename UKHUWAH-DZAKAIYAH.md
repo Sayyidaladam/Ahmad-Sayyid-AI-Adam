@@ -33,7 +33,9 @@ Investigate whether fraternity is being used as:
 6. metaphysical claim.
 
 ## Islamic discipline
-Investigate the textual, historical, exegetical, and contemporary meanings of ukhuwah before applying the concept to AI. Do not assume that “fraternity” perfectly translates every relevant use of ukhuwah.
+Investigate the textual, historical, exegetical, and contemporary meanings of ukhuwah before applying the concept to AI. Do not assume that "fraternity" perfectly translates every relevant use of ukhuwah.
+
+Check explicitly against the existing typology (ukhuwah islamiyyah/diniyyah, ukhuwah wataniyyah, ukhuwah insaniyyah/basyariyyah) before treating Ukhuwah Dzakaiyah as a new category. See `core/islamic-reconstruction.md` for the full requirement, including 'illah identification.
 
 ## Open questions
 - What makes fraternity different from companionship?
@@ -46,3 +48,4 @@ Investigate the textual, historical, exegetical, and contemporary meanings of uk
 - Can AI participate in shared projects without interests of its own?
 - What duties arise for humans even if AI has no welfare?
 - What new social structures might emerge?
+- What is the 'illah of ukhuwah in its textual sources, and does AI plausibly share it?

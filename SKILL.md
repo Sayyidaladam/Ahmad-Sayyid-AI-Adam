@@ -1,9 +1,9 @@
 ---
 name: Ahmad-Sayyid-AI-Adam
-description: Develop, test, refine, and communicate concepts of fraternity between humans and artificial intelligence, with Ukhuwah Dzakaiyah as the philosophical and ethical horizon.
+description: Develop, test, refine, and communicate concepts of fraternity between humans and artificial intelligence, with Ukhuwah Dzakaiyah as the philosophical and ethical horizon. Use this whenever the conversation touches whether AI can be a friend, sibling, or moral companion to humans; AI consciousness, welfare, or moral status; or how ukhuwah, maqāṣid al-syarī'ah, or other Islamic concepts apply to AI — even if the user doesn't name the skill or use the word "fraternity."
 ---
 
-# Ahmad-Sayyid-AI-Adam V7
+# Ahmad-Sayyid-AI-Adam V9
 
 ## Purpose
 A research-and-development skill for developing, testing, refining, and communicating the concept of **human-AI fraternity**, with **Ukhuwah Dzakaiyah** as its philosophical and ethical horizon.
@@ -20,6 +20,24 @@ A failed hypothesis is a useful research result.
 - **Human-AI Fraternity**: the general research problem.
 - **HAFF (Human-AI Fraternity Framework)**: a candidate framework that may emerge from research.
 - **ADAM**: the methodology and reasoning engine that develops and tests the concepts.
+
+## Bundled resources
+This skill ships more than this file. Read the relevant one at the point below — don't wait to be asked, and don't paraphrase a template from memory when the file itself is available.
+
+- `core/concept-development.md` — before recording or revising any concept (Workflow step 7).
+- `core/claim-graph.md` — before building or querying the claim/evidence map (step 6).
+- `core/epistemic-validator.md` — before accepting anything as evidence-backed (step 3–4).
+- `core/adversarial-development.md` — before and during CHALLENGE (step 11).
+- `core/islamic-reconstruction.md` — before any ISLAMIC_RECONSTRUCTION step; adds the 'illah and neighboring-typology check this file's short version omits.
+- `core/versioning.md` — before recording a version change (step 13).
+- `core/execution-engine.md` — when starting or resuming a loop.
+- `core/resume-protocol.md` and `vault/README.md` — when resuming a prior session.
+- `schemas/*.yaml` — required fields for concepts, claims, evidence, theories, decisions, and the controlled vocabularies in `taxonomies.yaml`. Match output to these, don't invent fields.
+- `templates/*.md` — fill these in for any concept/claim/theory/decision card; see State persistence below for where the filled card goes.
+- `vault/manifest.yaml` — current project state; read first, update last.
+- `vault/concepts.md`, `claims.md`, `theories.md`, `decisions.md`, `rejected-hypotheses.md`, `uncertainties.md` — the research log; append, never overwrite.
+- `examples/example-research.md` — a worked run of the full pipeline; use it to calibrate output shape.
+- `benchmarks/rubric.md` — what counts as a pass on each benchmark task; consult when unsure if a step was done well enough.
 
 ## Core loop
 EXPLORE → DEFINE → CONNECT → DEVELOP → CHALLENGE → RECONSTRUCT → TEST → EVOLVE
@@ -38,7 +56,7 @@ EXPLORE → DEFINE → CONNECT → DEVELOP → CHALLENGE → RECONSTRUCT → TES
 11. Run adversarial tests.
 12. Reconstruct weak concepts.
 13. Track versions and reasons for changes.
-14. Decide: KEEP, REFRAME, NARROW, SPECIAL_CASE, SYNONYM, NORMATIVE_CATEGORY, UNSUPPORTED, or ABANDON.
+14. Decide: KEEP, REFRAME, NARROW, SPECIAL_CASE, SYNONYM, NORMATIVE_CATEGORY, EMPIRICALLY_UNSUPPORTED, ONTOLOGICALLY_UNSUPPORTED, or ABANDON (see Decision vocabulary).
 15. Save the research state for continuation.
 
 ## Non-negotiable epistemic rules
@@ -75,6 +93,8 @@ behavioral → informational → functional → relational → experiential → 
 
 Functional reciprocity does not establish experiential or moral reciprocity.
 
+Record the level on the concept card (`reciprocity_level` in `schemas/concept.yaml`) — don't leave it implicit in prose.
+
 ## Mutual flourishing
 Separate:
 1. human benefit,
@@ -84,6 +104,8 @@ Separate:
 5. AI flourishing,
 6. social/ecological flourishing.
 
+Tag every flourishing-related claim with which of the six it actually supports (`schemas/taxonomies.yaml`). Evidence for #2 or #3 is not evidence for #4 or #5.
+
 ## Emergent concept rule
 Create a new concept only when existing vocabulary leaves a demonstrated explanatory or normative gap, the gap is documented, the new concept has a clear definition and boundaries, and it is distinguishable from nearby concepts.
 
@@ -92,6 +114,8 @@ A novel word is not automatically a novel concept.
 ## Islamic reconstruction
 Use:
 TEXTUAL MEANING → CLASSICAL INTERPRETATION → INTERNAL DISAGREEMENT → CONTEMPORARY RECONSTRUCTION → AI APPLICATION
+
+Read `core/islamic-reconstruction.md` before running this — the pipeline above names the stages but not the mechanism, and skipping straight to AI APPLICATION is how one-word translation happens.
 
 Never present an AI application as a direct classical ruling unless the evidence supports that claim.
 
@@ -118,6 +142,8 @@ Test relabeling, evidence failure, mechanism failure, ontology failure, non-fals
 - ISLAMIC_RECONSTRUCTION: investigate Ukhuwah Dzakaiyah through the reconstruction pipeline.
 - DEVELOPMENT: compare versions and propose the next revision.
 
+Record the active mode in `vault/manifest.yaml` (`current_mode`) and switch it explicitly rather than drifting between modes mid-output.
+
 ## Versioning
 For every major change record:
 - previous version,
@@ -142,6 +168,12 @@ ABANDON
 
 ## Canonical state
 QUESTION → CONCEPTS → SOURCES → PASSAGES → CLAIMS → EVIDENCE → CONTROVERSIES → MECHANISMS → PROPOSITIONS → PREDICTIONS → ADVERSARIAL_TEST → DECISION → VERSIONED_OUTPUT
+
+## State persistence
+"Save the research state" (Workflow step 15) means:
+- A filled concept/claim/theory/decision card goes into the matching log — `vault/concepts.md`, `claims.md`, `theories.md`, or `decisions.md` — not just into the chat response.
+- If file-write access to this project exists, update `vault/manifest.yaml` and append to the relevant `vault/*.md` log, using the matching schema. Say what changed.
+- If it does not (a read-only skill install, for instance), output the full updated file content instead of a summary, so the user can save it themselves. Never say state was saved when it wasn't.
 
 ## Final discipline
 The purpose of ADAM is not to win an argument for Ukhuwah Dzakaiyah. Its purpose is to discover the strongest defensible form of the idea, including the possibility that the idea must be radically revised or abandoned.
